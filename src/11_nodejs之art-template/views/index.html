@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>这是一个art-tempalte模板</h2>
+    <h2>{{app.name}}</h2>
+    {{@app.h}}
+
+    <h2>判断数值</h2>
+    {{if app.num>20}}
+       <h2>大于20</h2>
+    {{else}}
+        <h2>小于等于20</h2>  
+      {{/if}}
+      <br/>
+      <h2>循环数据</h2>
+      {{each app.list}}
+        <strong>循环数据的值是:{{$index}}---{{$value}}</strong>
+      {{/each}}
+     <br/>
+     <br/>
+     {{include './a.html'}}
+
+</body>
+</html>
